@@ -31,6 +31,6 @@ if (!$found) {
 }
 
 array_shift($argv);
-passthru($found . ' ' . implode(' ', $argv));
+passthru($found . '  --force-tty ' . implode(' ', $argv));
 
 /* End of dev.php */
