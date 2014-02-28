@@ -1,0 +1,140 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "bbfc02dd07b6159177ecc9fe5a2e56e3",
+    "packages": [
+        {
+            "name": "indeyets/pake",
+            "version": "1.99.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indeyets/pake.git",
+                "reference": "410d0d5c18bb3438d323570fdb502402aa7a1aba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indeyets/pake/zipball/410d0d5c18bb3438d323570fdb502402aa7a1aba",
+                "reference": "410d0d5c18bb3438d323570fdb502402aa7a1aba",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "1.1.*"
+            },
+            "suggest": {
+                "ext-bz2": "*",
+                "ext-pcntl": "*",
+                "ext-phar": "*",
+                "ext-posix": "*",
+                "ext-zlib": "*",
+                "phing/phing": "2.4.*",
+                "simpletest/simpletest": "1.1.*"
+            },
+            "bin": [
+                "bin/pake"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/pake/autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien.potencier@symfony-project.org",
+                    "homepage": "http://fabien.potencier.org/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alexey Zakhlestin",
+                    "email": "indeyets@gmail.com",
+                    "homepage": "https://indeyets.ru/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP automation tool inspired by Rake",
+            "homepage": "https://github.com/indeyets/pake/wiki",
+            "keywords": [
+                "automation",
+                "build",
+                "task"
+            ],
+            "time": "2013-11-04 08:29:46"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "2.3.x-dev",
+            "target-dir": "Symfony/Component/Finder",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Finder.git",
+                "reference": "df41b68d0795949c6edcf3fb331c8147b7cc4201"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/df41b68d0795949c6edcf3fb331c8147b7cc4201",
+                "reference": "df41b68d0795949c6edcf3fb331c8147b7cc4201",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Finder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-02-20 15:15:12"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

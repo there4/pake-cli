@@ -15,10 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "fabpot/php-cs-fixer": "0.4.0",
-        "squizlabs/php_codesniffer": "1.*",
-        "symfony/config": "v2.3.4",
-        "symfony/console": "v2.3.4",
-        "symfony/yaml": "v2.3.4"
+        "symfony/finder": "2.3.*",
+        "indeyets/pake": "~1.99"
     }
 }
