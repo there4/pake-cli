@@ -1,15 +1,15 @@
-cache/*
-log/*
-web/uploads/*
-config/databases.yml
-config/propel.ini
-data/sql/*
-lib/filter/doctrine/base/Base*
-lib/filter/doctrine/*Plugin/base/Base*
-lib/form/doctrine/base/Base*
-lib/form/doctrine/*Plugin/base/Base*
-lib/model/doctrine/base/Base*
-lib/model/doctrine/*Plugin/base/Base*
-lib/model/om/*
-lib/model/map/*
-web/*Plugin/*
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+/vendor/

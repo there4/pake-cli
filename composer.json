@@ -1,0 +1,24 @@
+{
+    "name": "there4/pake-cli",
+    "description": "Locate and execute a locally install instance of Pake",
+    "homepage": "https://github.com/there4/pake-cli",
+    "keywords": [
+        "pake",
+        "automation"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Craig Davis",
+            "email": "craig@there4development.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "fabpot/php-cs-fixer": "0.4.0",
+        "squizlabs/php_codesniffer": "1.*",
+        "symfony/config": "v2.3.4",
+        "symfony/console": "v2.3.4",
+        "symfony/yaml": "v2.3.4"
+    }
+}
