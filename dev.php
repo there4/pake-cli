@@ -10,19 +10,20 @@ $app = require __DIR__ . '/vendor/autoload.php';
 
 use Symfony\Component\Finder\Finder;
 
+$cwd = getcwd();
 $found = '';
 
 // Look in the simple ./vendor/bin
-if (file_exists(__DIR__ . './vendor/bin/pake')) {
-  $found = __DIR__ . './vendor/bin/pake';
+if (file_exists($cwd . '/vendor/bin/pake')) {
+    $found = $cwd . '/vendor/bin/pake';
 }
-
-$finder = new Finder();
-$finder->files()->name('pake')->in(__DIR__);
-
-if (iterator_count($finder)) {
-  $files = array_keys(iterator_to_array($finder));
-  $found = $files[0];
+else {
+    $finder = new Finder();
+    $finder->files()->name('pake')->in($cwd);
+    if (iterator_count($finder)) {
+        $files = array_keys(iterator_to_array($finder));
+        $found = $files[0];
+    }
 }
 
 if (!$found) {
