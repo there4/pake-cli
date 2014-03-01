@@ -12,10 +12,18 @@ pake_task('lint');
 pake_desc('Copy to ~/bin');
 pake_task('mv');
 
+pake_desc('Display the version');
+pake_task('version');
+
 pake_desc('Build the app for deployment');
 pake_task('build', 'lint', 'phar');
 
 function run_build() {}
+
+function run_version() {
+    $composer = json_decode(file_get_contents('composer.json'));
+    echo $composer->version . "\n";
+}
 
 function run_test() {
     passthru("phpunit");
