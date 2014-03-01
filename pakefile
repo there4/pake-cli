@@ -1,0 +1,46 @@
+<?php
+
+pake_desc('Run the unit tests');
+pake_task('test');
+
+pake_desc('Build phar file');
+pake_task('phar');
+
+pake_desc('PHP Lint the src folder');
+pake_task('lint');
+
+pake_desc('Copy to ~/bin');
+pake_task('mv');
+
+pake_desc('Build the app for deployment');
+pake_task('build', 'lint', 'phar');
+
+function run_build() {}
+
+function run_test() {
+    passthru("phpunit");
+}
+
+function run_phar()
+{
+    echo " * Construction phar and moving to pake\n";
+    $command =
+        'rm -f pake && rm -f pake.phar &&'
+        . 'php -dphar.readonly=0 build/empir make bin/pake.phar dev.php . --exclude="'
+        . '*.git/*|*.gitignore|*test*|*Tests*|*.md|*/doc/*|*.lock|*token.txt|pakefile'
+        . '|.*|build/*|*.markdown|*.phar|*LICENSE|*AUTHORS|*CHANGELOG|*.dist|*.tpl'
+        . '" && chmod a+x bin/pake.phar'
+        . ' && mv bin/pake.phar bin/pake';
+    passthru($command);
+}
+
+function run_lint() {
+    echo "\n * Linting files\n";
+    passthru("./build/lint -R ./src");
+}
+
+function run_mv() {
+  exec('cp ./bin/pake ~/bin/pake');
+}
+
+/* End of pakefile */
