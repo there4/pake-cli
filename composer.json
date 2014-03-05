@@ -2,7 +2,7 @@
     "name": "there4/pake-cli",
     "description": "Locate and execute a locally install instance of Pake",
     "homepage": "https://github.com/there4/pake-cli",
-    "version": "0.1",
+    "version": "0.2",
     "keywords": [
         "pake",
         "automation"

@@ -247,6 +247,7 @@ class Empir extends CLI_Interface
         . "    'description' => '$project->description', " . "\n"
         . "    'version' => '$project->version'" . "\n"
         . ");" . "\n"
+        . '$phar_cwd = getcwd();' . "\n"
         . "Phar::mapPhar(); " . "\n"
         . "include 'phar://".$phar_name."/".$stub_file."'; " . "\n"
         . "__HALT_COMPILER(); " . "\n"

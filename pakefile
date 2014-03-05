@@ -36,6 +36,7 @@ function run_phar()
         'rm -f pake && rm -f pake.phar &&'
         . 'php -dphar.readonly=0 build/empir make bin/pake.phar dev.php . --exclude="'
         . '*.git/*|*.gitignore|*test*|*Tests*|*.md|*/doc/*|*.lock|*token.txt|pakefile'
+        . '|bin/pake'
         . '|.*|build/*|*.markdown|*.phar|*LICENSE|*AUTHORS|*CHANGELOG|*.dist|*.tpl'
         . '" && chmod a+x bin/pake.phar'
         . ' && mv bin/pake.phar bin/pake';
