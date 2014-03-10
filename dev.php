@@ -19,6 +19,15 @@ $steps = array(
         return false;
     },
     function ($path) {
+        if (file_exists($path . '/composer.json')) {
+            $composer = json_decode(file_get_contents('composer.json'));
+            return isset($composer["config"]["vendor-dir"])
+                ? $composer["config"]["vendor-dir"]
+                : false;
+        }
+        return false;
+    },
+    function ($path) {
         $finder = new Finder();
         $finder->files()->name('pake')->in($path)->notPath('pake-cli');
         if (iterator_count($finder)) {
