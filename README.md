@@ -1,9 +1,8 @@
-# pake-cli
+# Pake Command Line Interface [![Build Status](https://travis-ci.org/there4/pake-cli.png?branch=master)](https://travis-ci.org/there4/pake-cli)
 > Locate and run a locally installed pake instance
 
-Install this and `pake` will find and execute pake from the bin folder as managed by Composer. This is currently an early version, and it can get bogged down in searching. But, it's quite quick when the pake file is in the expected `./vendor/bin/` and you are in the project root. 
+Install this and `pake` will find and execute pake from the bin folder as managed by Composer. This is currently an early version, and it can get bogged down in searching. But, it's quite quick when the pake file is in the expected `./vendor/bin/` and you are in the project root.
 
-[![Build Status](https://travis-ci.org/there4/pake-cli.png?branch=master)](https://travis-ci.org/there4/pake-cli)
 
 ## Installation
 
