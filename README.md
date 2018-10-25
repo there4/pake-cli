@@ -1,8 +1,20 @@
 # Pake Command Line Interface [![Build Status](https://travis-ci.org/there4/pake-cli.png?branch=master)](https://travis-ci.org/there4/pake-cli)
 > Locate and run a locally installed pake instance
 
-Install this and `pake` will find and execute pake from the bin folder as managed by Composer. This is currently an early version, and it can get bogged down in searching. But, it's quite quick when the pake file is in the expected `./vendor/bin/` and you are in the project root.
+## Deprecation Notice
+I believe that the parent [Pake project](https://github.com/indeyets/pake) is no longer under development. I am retiring any active support for this repository
+and will soon archive it.
 
+If you are looking for modern build systems, you should check out:
+
+* [Deployer](https://deployer.org/)
+* [Envoyer](https://envoyer.io/)
+* [Laravel Forge](https://forge.laravel.com/)
+* [Deploying with Git Hooks](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-jekyll-site-using-git-hooks-on-ubuntu-16-04)
+
+## About
+
+Install this and `pake` will find and execute pake from the bin folder as managed by Composer. This is currently an early version, and it can get bogged down in searching. But, it's quite quick when the pake file is in the expected `./vendor/bin/` and you are in the project root.
 
 ## Installation
 
